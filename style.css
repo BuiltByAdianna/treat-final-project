@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 48px;
+    color: #1a202c;
+    line-height: 1.25;
+}
+
 .row {
     width: 100%;
     max-width: 1280px;
@@ -222,6 +228,19 @@ header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__description {
+    width: 40%;
+}
+
+.header__img--wrapper {
+    width: calc(100% - 40%);
+}
+
+.header__img {
+width: 100%;
+max-width: 768px;
 }
 
 
