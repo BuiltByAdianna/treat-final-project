@@ -88,6 +88,18 @@ button {
    cursor: pointer; 
 }
 
+.btn {
+    background-color: rgb(100, 21, 255);
+    padding: 12px 32px;
+    border: medium;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
+}
+
 
 /* 
 
@@ -432,6 +444,14 @@ QUALITY WORK ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#quality .btn {
+    margin-top: 32px;
+}
+
+.btn:hover {
+    background-color: #5011cc;
 }
 
 .quality__description,
