@@ -745,7 +745,7 @@ rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     padding: 2rem;
 }
 
-.plan__buttom {
+.plan__bottom {
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 2rem;
@@ -766,6 +766,14 @@ rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    border: none;
+}
+
+.plan__button:hover {
+transform: translate(1px, -1px);
+box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
@@ -775,6 +783,11 @@ rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         rgb(56, 178, 172) 0%,
         rgb(129, 230, 217) 100%
     );
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
 }
 
 .plan:nth-child(odd) .plan__name, .plan:nth-child(odd) .plan__price, .plan:nth-child(odd) .plan__target {
@@ -810,6 +823,27 @@ rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     opacity: 0.25;
 }
 
+.plan:nth-child(2) {
+    background: linear-gradient(
+        135deg,
+        rgb(76,81,191) 0%,
+        rgb(102,126,234) 100%
+    );
+}
+
+.plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
+.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
+color: #f7fafc;
+background: linear-gradient(
+115deg,
+rgb(245, 101, 101) 0%,
+rgb(254, 178, 178) 100%
+);
+}
+
 
 /* 
 
@@ -820,6 +854,27 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials__img, .testimonials__description {
+    width: 50%;
+}
+
+#testimonials .section__title {
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
+
+.testimonial__rating {
+    color: #f6ad55;
+    margin-right: 2px;
+    margin-top: 4px;
+
 }
 
 
@@ -905,5 +960,17 @@ MOBILE RESPONSIVENESS ↓
     }
     main {
         margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1280px)
+
+
+
+@media (max-width: 768px)
+{
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
+        width: 100%;
+        max-width: 448px;
     }
 }
